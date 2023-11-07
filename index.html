@@ -131,6 +131,10 @@
             line-height: 1.6;
             color: #666;
         }
+		
+		        .config-code code {
+            color: #0f9d58; /* Green text color for code */
+        }
 
         /* Additional styles ... */
 
@@ -324,7 +328,7 @@ mkdir -p ~/hadoopdata/hdfs/{namenode,datanode}
 			
 		<p>Copy the below code.</p>
             <div class="neu">
-        <pre><code>&lt;configuration&gt;
+        <pre class="config-code"><code>&lt;configuration&gt;
 &lt;property&gt;
     &lt;name&gt;fs.defaultFS&lt;/name&gt;
     &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;
@@ -349,7 +353,7 @@ mkdir -p ~/hadoopdata/hdfs/{namenode,datanode}
 			
 		<p>Copy the below code.</p>
             <div class="neu">
-        <pre><code>&lt;configuration&gt;
+        <pre class="config-code"><code>&lt;configuration&gt;
 &lt;property&gt;
     &lt;name&gt;dfs.replication&lt;/name&gt;
     &lt;value&gt;1&lt;/value&gt;
@@ -381,7 +385,7 @@ mkdir -p ~/hadoopdata/hdfs/{namenode,datanode}
 			
 <p>Copy the below code</p>
             <div class="neu">
-        <pre><code>&lt;configuration&gt;
+        <pre class="config-code"><code>&lt;configuration&gt;
 &lt;property&gt;
     &lt;name&gt;yarn.app.mapreduce.am.env&lt;/name&gt;
     &lt;value&gt;HADOOP_MAPRED_HOME=\$HADOOP_HOME/home/hadoop/hadoop/bin/hadoop&lt;/value&gt;
@@ -416,7 +420,7 @@ mkdir -p ~/hadoopdata/hdfs/{namenode,datanode}
 			
 		<p>Copy the below code.</p>
             <div class="neu">
-        <pre><code>&lt;configuration&gt;
+        <pre class="config-code"><code>&lt;configuration&gt;
 &lt;property&gt;
     &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
     &lt;value&gt;mapreduce_shuffle&lt;/value&gt;
